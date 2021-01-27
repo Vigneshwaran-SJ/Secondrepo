@@ -1,0 +1,80 @@
+
+
+<html>
+    <body>
+<head>
+    <link href="s.css" rel="stylesheet">
+
+</head>
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">SURVEY FORM</h1>
+  <p id="description"><b>Note:</b> Fill correct and accurate information!</p>
+  
+  <fieldset>
+
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number">  </div>
+      <br>
+
+    <div>
+      <h class= "label">Gender</h>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+    <br>
+    <label for="date-label">DOB:</label>
+    <input type="date" name="bday">
+</fieldset>
+
+<fieldset> 
+<div>
+      <label for="role">Role:</label>
+      <select id="dropdown">
+  <option value="left">Front End Developer</option>
+  <option value="right">Back End Deveoper</option>
+  <option value="conservative">Human Resource Development</option>
+  <option value="conservative">Business Analyst</option>
+  </select>
+  <br>
+
+  </select>
+    </div>
+
+    <div>
+    <label for="improvements">Things to improve:</label>
+    <fieldset id="improvements">
+      <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Front-end Projects</label>
+      <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Back-end Projects</label>
+      <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Front-end Projects</label>
+      <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Back-end Projects</label>
+    </div>
+
+    <div>
+      <label for="msg"></label>
+      <p> Your Comments !</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Comments"></textarea>   </div>
+  
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit"  onclick="alert('SUBMITTED SUCCESSFULLY')"> SUBMIT </button>   </div>
+
+</form>
+  </div>
+
+</body>
+</html>
